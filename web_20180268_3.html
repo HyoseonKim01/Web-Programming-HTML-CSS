@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>폼 입력</title>
+  <style>
+    html,body {width: 900px;}
+  </style>
+</head>
+
+<body>
+  <h2>회원 가입</h2>
+  <h4><span style="color:red">*필수 입력 사항</span></h4>
+  <h3>기본 정보</h3>
+<form>
+<table>
+   <tr><td>*이름</td><td><input type = "text" name="name" size="5"></td></tr>
+   <tr><td>*생년월일</td><td><input type="data" name="birthdate" placeholder="mm/dd/yyyy"></td></tr>
+   <tr><td>*아이디</td><td><input type="text" name="id" size="12"></td></tr>
+   <tr><td>*암호</td><td><input type="password" name="pwd" size="12"></td></tr>
+   <tr><td>*암호 확인</td><td><input type="password" name="pwd_confirm" size="12"></td></tr>
+   <tr><td>*이메일</td><td><input type="email" name="email" size="20" placeholder="id@domain"></td></tr>
+   <tr><td>*전화번호</td><td><input type="tel" name="tel" size="12" placeholder="010-0000-0000"></td></tr>
+
+    <tr><td>주소</td><td><select name="address1">
+        <option value="00">--시도--</option>
+        <option value="11">서울특별시</option>
+        <option value="21">부산광역시</option>
+        <option value="22">대구광역시</option>
+        <option value="23">인천광역시</option>
+        <option value="24">광주광역시</option>
+        <option value="25">대전광역시</option>
+        <option value="26">울산광역시</option>
+        <option value="29">세종특별자치시</option>
+        <option value="31">경기도</option>
+        <option value="32">강원도</option>
+        <option value="33">충청북도</option>
+        <option value="34">충청남도</option>
+        <option value="35">전라북도</option>
+        <option value="36">전라남도</option>
+        <option value="37">경상북도</option>
+        <option value="38">경상남도</option>
+        <option value="39">제주특별자치도</option>
+    </select>
+      <input type="text" name="address2" size="20"></td></tr>
+</table>
+</form>
+  <h3>학 력</h3>
+<form>
+<table>
+  <tr><td>*대학명</td><td><input type="text" name="univ_name" size="15"></td></tr>
+  <tr><td>*학과(전공)</td><td><input type="text" name="major" size="12"></td></tr>
+  <tr><td>*졸업여부</td><td><input type="radio" name="status" value="1">졸업
+                           <input type="radio" name="status" value="2">졸업 예정자
+                           <input type="radio" name="status" value="3">중퇴</td></tr>
+</table>
+</form>
+  <h3>업무 경력</h3>
+<form>
+<table>
+  <tr><td>업체명</td><td><input type="text" name="co"></td></tr>
+  <tr><td>직급</td><td><input type="radio" name="position" value="0">인턴
+       <input type="radio" name="position" value="1">사원
+       <input type="radio" name="position" value="2">대리급
+       <input type="radio" name="position" value="3">과장급
+       <input type="radio" name="position" value="4">차장급 이상</td></tr>
+  <tr><td>근무기간</td><td><input type="number" min="0" max="10" step="1" name="years">년
+    <input type="number" min="0" max="11" step="1" name="months">개월</td></tr>
+  <tr><td>근무부서</td><td><input type="text" name="dept"></td></tr>
+</table>
+  담당 업무 내용:<br>
+      <textarea cols="60" rows="8" name="desc"></textarea>
+</form>
+  <h3>자기소개서 및 포트폴리오</h3>
+<form>
+
+  첨부파일 <input type="file" name="person_file"><br>
+  <div style="padding: 20px 140px;"><button type="submit>"><img src="submit.png"></td></button>
+  <button type="reset"><img src="reset.png"></button></div>
+</form>
+</body>
+</html>
